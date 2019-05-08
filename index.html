@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale =1">
     <title>My portfolio website</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <script
             src="https://code.jquery.com/jquery-3.4.0.min.js"
             integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
@@ -15,7 +16,7 @@
 <body>
 <section class="introPage splash" style= "height: 100%" id="test">
     <div class="introTextPage">
-        <h1 id ="introText">
+        <h1 id ="introText" style="color: black">
 <!--            Welcome to my website!-->
         </h1>
         <p></p>
@@ -31,46 +32,135 @@
 
 </section>
 
-<section class="homePage postSplash" id="home">
+<section class="homePage postSplash"  >
+    <div class="wrapper">
+
     <div class="homeHeader">
 
-            My portfolio
+        My portfolio
+        <p style="font-family: Raleway, sans-serif">Abbi Devins-Suresh</p>
 
     </div>
 
-    <nav class="navigation">
-            <a href="#home">Home</a>
-            <a href =#about>About</a>
-            <a href =#art>Art Work</a>
-            <a href =#websites>Websites</a>
-            <a href =#education>Education</a>
-            <a href =#contact>Contact</a>
+    <nav class="navigation page">
+            <a class= "homePage"  onclick = "openPage('home')" href="#home">Home</a>
+            <a class = "pages" onclick="openPage('about')" href="#about">About</a>
+            <a class = "pages" onclick="openPage('art')" href =#art>Art Work</a>
+            <a class = "pages" onclick="openPage('websites')" href =#websites>Websites</a>
+            <a class = "pages" onclick="openPage('education')" href =#education>Education</a>
+            <a class = "pages" onclick="openPage('contact')" href =#contact>Contact</a>
     </nav>
+    </div>
+        <div class ="carousel-cont pageContent homepageContent" id="home">
+<!--            https://www.w3schools.com/howto/howto_js_slideshow.asp-->
+
+                <div class="Feature fade">
+                    <figure>
+                        <a href="https://abisuresh.github.io/MemoryGame/" target="_blank"><img id="testPic" src="images/MemoryGame.png" style = "max-width: 50%" alt ="MemoryGame" class="images"></a>
+                        <figcaption>Memory Game App-Udacity Nanodegree Program </figcaption>
+                    </figure>
+                </div>
+
+                <div class="Feature fade">
+                    <figure>
+                        <a href="http://wedding.devinssuresh.com" target="_blank"><img id="weddingwebsite"  style = "max-width: 50%" src ="images/weddingwebsitepic.png" alt="Wedding Website" class="images"></a>
+                        <figcaption>Wedding Website</figcaption>
+                    </figure>
+                </div>
+                <div class="Feature fade">
+                    <figure>
+                        <a onclick="openPage('art')" href =#art target="_blank"><img id="testPic2" src="images/KHPainting.png"  style = "max-width: 50%" alt="Kamala Harris Painting" class="images"></a>
+                        <figcaption>My Kamala Harris Painting</figcaption>
+                    </figure>
+                </div>
+
+            <a class="previous" onclick="moveSlide()">&#10094;</a>
+            <a class="next" onclick="moveSlide()">&#10095;</a>
+            </div>
+
+    <div>
+        <span class="dot" onclick="selectedSlide(1)"></span>
+        <span class="dot" onclick="selectedSlide(2)"></span>
+        <span class="dot" onclick="selectedSlide(3)"></span>
+    </div>
+
+    <br>
+
+
 </section>
 
 <section class="main">
-    <div id="about">
+
+    <div id="about" class="pageContent">
+        <div class="flexbox-container">
+                <div class="info" style="color: black">
+                    <p>Hi! I am a 20-something software engineering student. I hope to be involved in
+                        machine learning, artificial intelligence and web development
+                        upon graduation from my degree program.</p>
+                </div>
+
+        </div>
 
     </div>
 
-    <div id="art">
+    <div id="art" class="pageContent">
+        <div class="flexbox-container">
+
+        </div>
 
     </div>
 
-    <div id="websites">
+    <div id="websites" class="pageContent">
 
     </div>
 
-    <div id="education">
+    <div id="education" class="pageContent">
+        <div class="flexbox-container education">
+            <ul>
+                <li>Oregon State University</li>
+                <li>University of Vermont College of Medicine</li>
+                <li>Bowdoin College</li>
+                <li><a href="https://www.linkedin.com/in/abbi-devins-suresh-m-d-b5815827/">LinkedIn</a></li>
+            </ul>
+
+        </div>
 
     </div>
 
-    <div id="contact">
+    <div id="contact" class="pageContent">
+        <fieldset class="form">
+            <legend style="background-color: cornflowerblue"> Ask a question/Post a comment </legend>
+            <p> </p>
+            <!--    http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php-->
+            <form action="javascript: " onsubmit="submitForm()" method="post">
+                <section class="formClass">
+                    <p> </p>
+                    Name: <input id = "name" type="text" name="text_input" size="" maxlength="">
+                    <p> </p>
+
+                    Email: <input id = "email" type="number" name="numerical_input" size="" maxlength="">
+                    <p> </p>
+
+                    Questions/Comments: <input id="question" type="text" name="text_input" size="" maxlength="">
+                    <p> </p>
+
+                </section>
+
+                <p></p>
+                <input id= "formSubmit" type="submit" value="Submit" />
+            </form>
+            <p> </p>
+
+        </fieldset>
 
     </div>
 
 </section>
 <script src="javascripts/animation.js"></script>
 </body>
+
+<footer>
+
+</footer>
 
 </html>

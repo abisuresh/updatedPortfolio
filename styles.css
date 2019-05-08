@@ -4,15 +4,19 @@ https://www.w3schools.com/howto/howto_js_topnav.asp*/
 html,body{
     height: 100%;
     margin: 0;
-    overflow: hidden;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 body{
-    width: 100%;
+    /*width: 100%;*/
+    background: url("images/grandcanyon.jpg") #835468;
     margin: 0;
-    background-color: black;
+    padding: 0;
+    height: 100%;
+    /*background-color: black;*/
     font-family: "Courier", sans-serif;
-    color: white;
+    /*color: white;*/
     border: solid 10px indigo;
 }
 
@@ -48,12 +52,13 @@ h2{
 
 .introPage{
     /*background-color: midnightblue;*/
-    /*background: url("images/IMG_1442.jpg");*/
+
     width: 100%;
     text-align: center;
     position: absolute;
     margin: 0;
-    color: floralwhite;
+    /*color: floralwhite;*/
+    color: black;
     /*top: 50%;*/
     transform: translate(0, 50%);
 }
@@ -64,11 +69,12 @@ h2{
 }
 
 .enterWebsite{
-    padding: 2%;
+    padding: 1%;
     background-color: darkred;
     border-radius: 5px;
     color: lightyellow;
     margin: 2%;
+    cursor: pointer;
 }
 
 .navigation{
@@ -89,14 +95,132 @@ h2{
 }
 
 .navigation a:hover{
-    background-color: beige;
-    color: black;
-}
-
-.navigation a.active{
     background-color: cornflowerblue;
     color: black;
 }
 
+.active{
+    display: block;
+}
+
+.hidden{
+    display: none;
+}
+/*.navigation a.active{*/
+/*    background-color: cornflowerblue;*/
+/*    color: black;*/
+/*}*/
+
+.main{
+    color: black;
+}
+
+.pageContent{
+    display: none;
+    margin: 1%;
+}
+
+.homepageContent{
+    display: block;
+}
+
+.flexbox-container{
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    flex-wrap: nowrap;
+}
+
+.flexbox-container > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carousel-cont {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.Feature{
+    display: none;
+}
+
+.previous, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    color: black;
+    border-radius: 4px;
+    font-weight: bolder;
+}
+
+
+.next{
+    right: 0;
+    border-radius: 4px;
+}
+
+.dot{
+    cursor: pointer;
+    height: 2%;
+    width: 3%;
+    margin: 0 0.1%;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.7s ease-in;
+}
+
+.active, .dot:hover{
+    background-color: gray;
+}
+
+.info{
+    border: solid indigo;
+    width: 80%;
+    height: 100%;
+}
+
+.form{
+    background-color: cornflowerblue;
+    width: 50%;
+
+}
+
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name:fade;
+    animation-duration:3s;
+}
+
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0.3}
+    to {opacity: 1}
+}
+
+@keyframes fade{
+    from {opacity: 0.3}
+    to {opacity: 1}
+}
+
+@-webkit-keyframes blink-caret {
+
+}
+
 /*Add in responsive CSS*/
 
+@media screen and (max-width: 760px){
+    .flexbox-container{
+        display: flex;
+        flex-direction: column;
+        max-width: 95%;
+    }
+
+}
+
+@media screen and(min-width: 600px){
+
+}
