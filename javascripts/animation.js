@@ -67,14 +67,20 @@ function runCarousel(index){
     let imageIndex = index;
     let i;
     let images = document.getElementsByClassName("Feature");
+    let placeMarks = document.getElementsByClassName("dot");
     for(i=0; i < images.length; i++){
         images[i].style.display ="none";
+    }
+
+    for(i=0; i < placeMarks.length; i++){
+        placeMarks[i].className = placeMarks[i].className.replace(" active", "");
     }
     imageIndex++;
     if(imageIndex> images.length){
         imageIndex= 1;
     }
     images[imageIndex-1].style.display = "block";
+    placeMarks[imageIndex-1].className += " active";
     // setTimeout(runCarousel, 3000);
     setTimeout(function(){
         runCarousel(imageIndex);

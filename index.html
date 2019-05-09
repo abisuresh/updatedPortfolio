@@ -14,6 +14,7 @@
 </head>
 
 <body>
+<!--Create splash page that user has to interact with before entering homepage-->
 <section class="introPage splash" style= "height: 100%" id="test">
     <div class="introTextPage">
         <h1 id ="introText" style="color: black">
@@ -31,6 +32,7 @@
     <p></p>
 
 </section>
+
 
 <section class="homePage postSplash"  >
     <div class="wrapper">
@@ -56,7 +58,7 @@
 
                 <div class="Feature fade">
                     <figure>
-                        <a href="https://abisuresh.github.io/MemoryGame/" target="_blank"><img id="testPic" src="images/MemoryGame.png" style = "max-width: 50%" alt ="MemoryGame" class="images"></a>
+                        <a href="https://abisuresh.github.io/MemoryGame/" target="_blank"><img id="testPic" src="images/MemoryGame.png" style = "max-width: 20%" alt ="MemoryGame" class="images"></a>
                         <figcaption>Memory Game App-Udacity Nanodegree Program </figcaption>
                     </figure>
                 </div>
@@ -69,20 +71,29 @@
                 </div>
                 <div class="Feature fade">
                     <figure>
-                        <a onclick="openPage('art')" href =#art target="_blank"><img id="testPic2" src="images/KHPainting.png"  style = "max-width: 50%" alt="Kamala Harris Painting" class="images"></a>
+                        <a onclick="openPage('art')" href =#art target="_blank"><img id="testPic2" src="images/KHPainting.png"  style = "max-width: 20%" alt="Kamala Harris Painting" class="images"></a>
                         <figcaption>My Kamala Harris Painting</figcaption>
                     </figure>
                 </div>
 
             <a class="previous" onclick="moveSlide()">&#10094;</a>
             <a class="next" onclick="moveSlide()">&#10095;</a>
+
+            <div style="text-align: center">
+                <!--        <span class="dot" onclick="selectedSlide(1)"></span>-->
+                <!--        <span class="dot" onclick="selectedSlide(2)"></span>-->
+                <!--        <span class="dot" onclick="selectedSlide(3)"></span>-->
+                <a class="dot"></a>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
             </div>
 
-    <div>
-        <span class="dot" onclick="selectedSlide(1)"></span>
-        <span class="dot" onclick="selectedSlide(2)"></span>
-        <span class="dot" onclick="selectedSlide(3)"></span>
-    </div>
+<!--    <div style="text-align: center">-->
+<!--        <a class="dot"></a>-->
+<!--        <span class="dot"></span>-->
+<!--        <span class="dot"></span>-->
+<!--    </div>-->
 
     <br>
 

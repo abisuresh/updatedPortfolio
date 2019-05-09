@@ -101,6 +101,7 @@ h2{
 
 .active{
     display: block;
+    z-index: 1;
 }
 
 .hidden{
@@ -110,6 +111,11 @@ h2{
 /*    background-color: cornflowerblue;*/
 /*    color: black;*/
 /*}*/
+
+.pages{
+    text-align: center;
+    align-content: center;
+}
 
 .main{
     color: black;
@@ -144,6 +150,8 @@ h2{
 
 .Feature{
     display: none;
+    text-align: center;
+    align-content: center;
 }
 
 .previous, .next{
@@ -164,13 +172,14 @@ h2{
 
 .dot{
     cursor: pointer;
-    height: 2%;
-    width: 3%;
+    height: 25px;
+    width: 25px;
     margin: 0 0.1%;
     background-color: black;
     border-radius: 50%;
     display: inline-block;
-    transition: background-color 0.7s ease-in;
+    /*transition: background-color 0.7s ease-in;*/
+    z-index: 1;
 }
 
 .active, .dot:hover{
@@ -218,7 +227,6 @@ h2{
         flex-direction: column;
         max-width: 95%;
     }
-
 }
 
 @media screen and(min-width: 600px){
