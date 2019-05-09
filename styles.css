@@ -79,15 +79,16 @@ h2{
 }
 
 .navigation{
+    align-content: center;
     display: block;
     overflow: hidden;
     background-color: darkgray;
     text-align: center;
-    align-content: center;
     margin: 0;
 }
 
 .navigation a{
+    align-content: center;
     float: left;
     color: white;
     background-color: darkgray;
@@ -214,10 +215,16 @@ https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_image_gallery*/
 
 .info{
     border: solid indigo;
-    width: 80%;
-    height: 150px;
-    overflow: auto;
+    overflow: scroll;
     margin : auto;
+    width: 80%;
+}
+
+.infoText{
+    padding: 3%;
+    /*width: 80%;*/
+    height: 200px;
+
 }
 
 .form{
@@ -231,6 +238,15 @@ https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_image_gallery*/
     -webkit-animation-duration: 3s;
     animation-name:fade;
     animation-duration:3s;
+}
+
+button{
+    background-color: darkgray;
+    color: white;
+    width: 30%;
+    margin: auto auto 3% auto;
+    padding: 2%;
+    border-radius: 5px;
 }
 
 /*.footer{*/
