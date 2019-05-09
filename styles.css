@@ -124,6 +124,8 @@ h2{
 .pageContent{
     display: none;
     margin: 1%;
+    /*text-align: center;*/
+    /*align-content: center;*/
 }
 
 .homepageContent{
@@ -142,6 +144,26 @@ h2{
     justify-content: center;
     align-items: center;
 }
+
+/*helpful for getting responsive layout of images in artwork
+https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_image_gallery*/
+.flexrow{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 1%;
+}
+
+.flexcolumn{
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 1%;
+}
+
+.column .respArt{
+    margin-top: 2%;
+    vertical-align: middle;
+}
+
 .carousel-cont {
     max-width: 100%;
     position: relative;
@@ -227,6 +249,19 @@ h2{
         flex-direction: column;
         max-width: 95%;
     }
+
+    .column{
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .column{
+        flex: 100%;
+        max-width: 100%;
+    }
+
 }
 
 @media screen and(min-width: 600px){
