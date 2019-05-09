@@ -164,6 +164,12 @@ https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_image_gallery*/
     padding: 0 1%;
 }
 
+.flexcol{
+    display: flex;
+    flex-direction: column;
+    max-width: 95%;
+}
+
 .column .respArt{
     margin-top: 2%;
     vertical-align: middle;
@@ -205,7 +211,7 @@ https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_image_gallery*/
     background-color: black;
     border-radius: 50%;
     display: inline-block;
-    /*transition: background-color 0.7s ease-in;*/
+    transition: background-color 0.7s ease-in;
     z-index: 1;
 }
 
@@ -247,6 +253,7 @@ button{
     margin: auto auto 3% auto;
     padding: 2%;
     border-radius: 5px;
+    border: 1px solid black;
 }
 
 /*.footer{*/
