@@ -63,6 +63,7 @@ function openPage(pageName){
 function setValues(){
 
 }
+// https://www.w3schools.com/howto/howto_js_slideshow.asp
 function runCarousel(index){
     let imageIndex = index;
     let i;
