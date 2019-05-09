@@ -215,7 +215,7 @@ https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_image_gallery*/
 .info{
     border: solid indigo;
     width: 80%;
-    height: 50%;
+    height: 150px;
     overflow: auto;
     margin : auto;
 }
