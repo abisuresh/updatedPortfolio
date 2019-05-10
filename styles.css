@@ -139,7 +139,7 @@ h2{
 .flexbox-container{
     display: flex;
     flex-direction: row;
-    max-width: 100%;
+    /*max-width: 100%;*/
     flex-wrap: nowrap;
 }
 

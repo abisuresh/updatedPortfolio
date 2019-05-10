@@ -121,3 +121,8 @@ function moveSlide(){
 function selectedSlide(currentSlide){
 
 }
+
+function openImage(){
+    let modal = document.getElementsByClassName('modal');
+
+}
