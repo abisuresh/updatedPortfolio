@@ -122,11 +122,14 @@ function selectedSlide(currentSlide){
 
 }
 
+// Used https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal_img as a
+//starting point then converted it to a function to handle more than 1 image
+//This stack overflow response was helpful in fixing bugs: https://stackoverflow.com/questions/45238267/modal-image-using-js
 function openImage(){
-    let modals = document.getElementsByClassName('modal');
+    let modal = document.getElementById('modal');
     let modalImages = document.getElementsByClassName('modalContent');
     let closeModals = document.getElementsByClassName('closeModal');
-    for(let i=0; i < modals.length; i++){
+    for(let i=0; i < modalImages.length; i++){
         modalImages[i].onclick= function(){
             // modals[i].style.display="block";
             // modals[i].src= this.src;
@@ -135,9 +138,9 @@ function openImage(){
             document.getElementById('caption').innerHTML = this.alt;
             document.getElementById('artModal').style.display = "block";
         };
-        closeModals[i].onclick= function(){
-            modals[i].style.display= "none";
-        }
+    }
+    closeModals.onclick= function(){
+        modal.style.display= "none";
     }
 }
 
