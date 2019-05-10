@@ -123,8 +123,22 @@ function selectedSlide(currentSlide){
 }
 
 function openImage(){
-    let modal = document.getElementsByClassName('modal');
-
+    let modals = document.getElementsByClassName('modal');
+    let modalImages = document.getElementsByClassName('modalContent');
+    let closeModals = document.getElementsByClassName('closeModal');
+    for(let i=0; i < modals.length; i++){
+        modalImages[i].onclick= function(){
+            // modals[i].style.display="block";
+            // modals[i].src= this.src;
+            // modals[i].innerHTML = this.alt;
+            document.getElementById('imgModal').src= this.src;
+            document.getElementById('caption').innerHTML = this.alt;
+            document.getElementById('artModal').style.display = "block";
+        };
+        closeModals[i].onclick= function(){
+            modals[i].style.display= "none";
+        }
+    }
 }
 
 //This example was helpful in determining how to make hamburger menu/Responsive navigation:

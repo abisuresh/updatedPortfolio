@@ -81,8 +81,8 @@
                     </figure>
                 </div>
 
-            <a class="previous" onclick="moveSlide()">&#10094;</a>
-            <a class="next" onclick="moveSlide()">&#10095;</a>
+<!--            <a class="previous" onclick="moveSlide()">&#10094;</a>-->
+<!--            <a class="next" onclick="moveSlide()">&#10095;</a>-->
 
             <div style="text-align: center">
                 <!--        <span class="dot" onclick="selectedSlide(1)"></span>-->
@@ -136,36 +136,42 @@
     </div>
 
     <div id="art" class="pageContent">
+        <div id="artModal" class="modal">
+            <span class="closeModal">&times;</span>
+            <img src= "" alt ="" id="imgModal">
+            <span id="caption" style="color: white"></span>
+        </div>
         <div class="flexrow">
             <div class="flexcolumn">
                 <figure class="respArt">
-                    <a><img id="abstractWorld" src="images/abstractworld.jpg" style = "width: 100%" alt ="abstract world painting" class="images"></a>                    <figcaption>Abstract World Painting </figcaption>
+                    <a><img id="abstractWorld"  src="images/abstractworld.jpg" style = "width: 100%" alt ="abstract world painting" class="modalContent images" onclick="openImage()"></a>
+                    <figcaption>Abstract World Painting </figcaption>
                 </figure>
                 <figure class="respArt">
-                    <a><img id="acadia" src="images/acadia.jpg" style = "width: 100%" alt ="acadia painting" class="images"></a>
+                    <a><img id="acadia" src="images/acadia.jpg" style = "width: 100%" alt ="acadia painting" class="modalContent images" onclick="openImage()"></a>
                     <figcaption>Acadia, ME Abstract Painting </figcaption>
                 </figure>
                 <figure class="respArt">
-                    <a><img id="adirondacks" src="images/adirondacks.jpg" style = "width: 100%" alt ="adirondack painting" class="images"></a>
+                    <a><img id="adirondacks" src="images/adirondacks.jpg" style = "width: 100%" alt ="adirondack painting" class="modalContent images" onclick="openImage()"></a>
                     <figcaption>Adirondacks Painting </figcaption>
                 </figure>
                 <figure class="respArt">
-                    <a><img id="KHPainting" src="images/KHPainting.png" style = "width: 100%" alt ="Kamala Harris painting" class="images"></a>
+                    <a><img id="KHPainting" src="images/KHPainting.png" style = "width: 100%" alt ="Kamala Harris painting" class="modalContent images" onclick="openImage()"></a>
                     <figcaption>Kamala Harris Painting </figcaption>
                 </figure>
             </div>
             <div class="flexcolumn">
 
                 <figure class="respArt">
-                    <a><img id="patGF" src="images/patgf.jpg" style = "width: 100%" alt ="paternal GF painting" class="images"></a>
+                    <a><img id="patGF" src="images/patgf.jpg" style = "width: 100%" alt ="paternal GF painting" class="modalContent images" onclick="openImage()"></a>
                     <figcaption>Paternal GrandFather Painting </figcaption>
                 </figure>
                 <figure class="respArt">
-                    <a><img id="patGM" src="images/patgm.jpg" style = "width: 100%" alt ="paternal GM painting" class="images"></a>
+                    <a><img id="patGM" src="images/patgm.jpg" style = "width: 100%" alt ="paternal GM painting" class="modalContent images" onclick="openImage()"></a>
                     <figcaption>Paternal GrandMother Painting </figcaption>
                 </figure>
                 <figure class="respArt">
-                    <a><img id="selfPortrait" src="images/self_portrait_closeup.jpg" style = "width: 100%" alt ="acadia painting" class="images"></a>
+                    <a><img id="selfPortrait" src="images/self_portrait_closeup.jpg" style = "width: 100%" alt ="acadia painting" class="modalContent images" onclick="openImage()"></a>
                     <figcaption>Self-Portrait (Close-up) </figcaption>
                 </figure>
             </div>
@@ -210,9 +216,9 @@
 
             </ul>
             <div class="flexcol">
-                <button><a href="https://www.linkedin.com/in/abbi-devins-suresh-m-d-b5815827/" target="_blank">LinkedIn</a></button>
-                <button><a href="files/Resume_DevinsSuresh_Abbi.pdf" target="_blank">Download my Resume</a></button>
-                <button><a href="https://github.com/abisuresh" target="_blank">GitHub Profile</a></button>
+                <button><a href="https://www.linkedin.com/in/abbi-devins-suresh-m-d-b5815827/" target="_blank" style="font-weight: bolder">LinkedIn</a></button>
+                <button><a href="files/Resume_DevinsSuresh_Abbi.pdf" target="_blank" style="font-weight: bolder">Download my Resume</a></button>
+                <button><a href="https://github.com/abisuresh" target="_blank" style="font-weight: bolder">GitHub Profile</a></button>
             </div>
 
         </div>
