@@ -63,6 +63,8 @@ function openPage(pageName){
 function setValues(){
 
 }
+
+// The following site was helpful in learning how to do this:
 // https://www.w3schools.com/howto/howto_js_slideshow.asp
 function runCarousel(index){
     let imageIndex = index;
@@ -88,8 +90,27 @@ function runCarousel(index){
     }, 4000);
 }
 
+/*Lectures on AJAX/asynchronous JS and POST/GET requests were helpful*/
 function submitForm(){
+    let req = new XMLHttpRequest();
+    let sentText = {};
+    sentText['Name'] = document.getElementById('name').value;
+    sentText['Email'] = document.getElementById('email').value;
+    sentText['Question'] = document.getElementById('question').value;
+    req.open("POST", "http://httpbin.org/post", true);
+    req.setRequestHeader('Content-Type', 'application/json');
+    req.addEventListener('load', function(){
+        if(req.status >= 200 && req.status < 400){
+            let respToReq = JSON.parse(req.responseText);
+            console.log(respToReq);
+            // document.getElementById('return').textContent= respToReq.data;
+        }else{
+            console.log('Error: ' + req.statusText);
+        }
+    });
+    req.send(JSON.stringify(sentText));
 
+    this.event.preventDefault();
 
 }
 
