@@ -165,10 +165,19 @@ https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_image_gallery*/
     padding: 0 1%;
 }
 
+.education{
+    margin: auto;
+    text-align: center;
+    align-content: center;
+}
+
 .flexcol{
     display: flex;
     flex-direction: column;
     max-width: 95%;
+    margin: auto;
+    text-align: center;
+    align-content: center;
 }
 
 .column .respArt{
@@ -255,6 +264,7 @@ button{
     padding: 2%;
     border-radius: 5px;
     border: 1px solid black;
+    font-size: medium;
 }
 
 /*.footer{*/
