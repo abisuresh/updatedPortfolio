@@ -126,3 +126,14 @@ function openImage(){
     let modal = document.getElementsByClassName('modal');
 
 }
+
+//This example was helpful in determining how to make hamburger menu/Responsive navigation:
+// https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav
+function revealMenu(){
+    let menu = document.getElementById("navigation");
+    if(menu.className ==="navigation"){
+        menu.className += " responsive";
+    }else{
+        menu.className = "navigation";
+    }
+}

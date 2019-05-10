@@ -88,6 +88,8 @@ h2{
     margin: 0;
 }
 
+
+
 .navigation a{
     align-content: center;
     float: left;
@@ -111,6 +113,11 @@ h2{
 .hidden{
     display: none;
 }
+
+.navigation .hamburgerIcon{
+    display: none;
+}
+
 /*.navigation a.active{*/
 /*    background-color: cornflowerblue;*/
 /*    color: black;*/
@@ -317,6 +324,27 @@ button{
     /*    flex: 100%;*/
     /*    max-width: 100%;*/
     /*}*/
+
+    .navigation a:not(:first-child){
+        display: none;
+    }
+
+    .navigation .hamburgerIcon{
+        float: left;
+        display: block;
+    }
+
+    .navigation.responsive{
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+
+    .navigation.responsive a{
+        float: none;
+        display: block;
+        text-align: left;
+    }
 }
 
 @media screen and(min-width: 600px){

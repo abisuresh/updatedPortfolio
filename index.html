@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale =1">
     <title>My portfolio website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <script
@@ -44,13 +45,17 @@
 
     </div>
 
-    <nav class="navigation page">
+<!--        https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
+            Utilized cloud fare CDN for hamburger icon-->
+    <nav class="navigation page" id ="navigation">
+            <a href="javascript:void(0);" class="hamburgerIcon" onclick="revealMenu()"><i class="fa fa-bars"></i></a>
             <a class= "homePage"  onclick = "openPage('home')" href="#home">Home</a>
             <a class = "pages" onclick="openPage('about')" href="#about">About</a>
             <a class = "pages" onclick="openPage('art')" href =#art>Art Work</a>
             <a class = "pages" onclick="openPage('websites')" href =#websites>Websites & Projects</a>
             <a class = "pages" onclick="openPage('education')" href =#education>Education</a>
             <a class = "pages" onclick="openPage('contact')" href =#contact>Contact</a>
+
     </nav>
     </div>
         <div class ="carousel-cont pageContent homepageContent" id="home">
