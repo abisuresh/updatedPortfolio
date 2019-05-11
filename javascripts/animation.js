@@ -1,5 +1,10 @@
 
-document.body.onload= typing;
+document.body.onload= onLoad;
+
+function onLoad(){
+    typing();
+    openImage();
+}
 
 // https://stackoverflow.com/questions/20823767/welcome-screen-before-website-loads-click-to-enter-splash-screen
 $('.enterWebsite').click(function(){
@@ -126,7 +131,7 @@ function selectedSlide(currentSlide){
 //starting point then converted it to a function to handle more than 1 image
 //This stack overflow response was helpful in fixing bugs: https://stackoverflow.com/questions/45238267/modal-image-using-js
 function openImage(){
-    let modal = document.getElementById('modal');
+    let modal = document.getElementById('artModal');
     let modalImages = document.getElementsByClassName('modalContent');
     let closeModals = document.getElementsByClassName('closeModal');
     for(let i=0; i < modalImages.length; i++){
@@ -139,7 +144,7 @@ function openImage(){
             document.getElementById('artModal').style.display = "block";
         };
     }
-    closeModals.onclick= function(){
+    closeModals[0].onclick= function(){
         modal.style.display= "none";
     }
 }

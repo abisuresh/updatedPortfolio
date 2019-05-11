@@ -281,13 +281,18 @@ button{
 .modal{
     display: none;
     background-color: black;
-    position: absolute;
-    width: 100%;
-    height: 90%;
+    position: fixed;
+    width: 80%;
+    height: 80%;
+    left: 0;
+    top: 0;
+    padding-top: 20px;
     overflow: auto;
     border-radius: 10px;
     border: solid 2px black;
     z-index: 1;
+    text-align: center;
+    align-content: center;
 }
 
 .modalContent{
@@ -296,8 +301,19 @@ button{
     display: block;
     width: 80%;
     max-width: 700px;
-    vertical-align: middle;
+    /*vertical-align: middle;*/
 
+}
+
+#caption{
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
 }
 
 .closeModal{
@@ -357,8 +373,15 @@ button{
         max-width: 50%;
     }
 
+    .modal{
+        width: 600px;
+    }
     .modalContent{
-        width: 100%;
+        width: 10%;
+    }
+
+    .images{
+        width: 50%;
     }
 }
 
