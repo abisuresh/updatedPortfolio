@@ -276,6 +276,13 @@ button{
 
 .images{
     cursor: pointer;
+    align-content: center;
+    text-align: center;
+}
+
+.respArt{
+    align-content: center;
+    text-align: center; 
 }
 
 .modal{
