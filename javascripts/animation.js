@@ -30,7 +30,6 @@ function typing(){
         i++;
         setTimeout(typing, speedTyping);
     }
-
 }
 
 //https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs
@@ -102,7 +101,7 @@ function submitForm(){
     sentText['Name'] = document.getElementById('name').value;
     sentText['Email'] = document.getElementById('email').value;
     sentText['Question'] = document.getElementById('question').value;
-    req.open("POST", "http://httpbin.org/post", true);
+    req.open("POST", "http://flip3.engr.oregonstate.edu:8409/", true);
     req.setRequestHeader('Content-Type', 'application/json');
     req.addEventListener('load', function(){
         if(req.status >= 200 && req.status < 400){
