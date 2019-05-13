@@ -299,6 +299,7 @@ button{
     left: 0;
     top: 0;
     padding-top: 40px;
+    overflow-y: scroll;
     /*overflow-x: hidden;*/
     border-radius: 10px;
     border: solid 2px black;
@@ -329,7 +330,7 @@ button{
 .closeModal{
     position: absolute;
     color: white;
-    top: 35px;
+    top: 15px;
     right: 35px;
     font-size: x-large;
     font-weight: bold;
