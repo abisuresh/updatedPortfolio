@@ -4,6 +4,7 @@ document.body.onload= onLoad;
 function onLoad(){
     typing();
     openImage();
+    revealMenu();
 }
 
 // https://stackoverflow.com/questions/20823767/welcome-screen-before-website-loads-click-to-enter-splash-screen
