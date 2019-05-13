@@ -1,5 +1,7 @@
 /*https://medium.freecodecamp.org/how-to-center-things-with-style-in-css-dc87b7542689
-https://www.w3schools.com/howto/howto_js_topnav.asp*/
+https://www.w3schools.com/howto/howto_js_topnav.asp
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal_img
+https://www.w3schools.com/howto/howto_js_slideshow.asp*/
 
 html,body{
     height: 100%;
@@ -296,7 +298,7 @@ button{
     /*margin: auto;*/
     left: 0;
     top: 0;
-    padding-top: 20px;
+    padding-top: 40px;
     /*overflow-x: hidden;*/
     border-radius: 10px;
     border: solid 2px black;
@@ -327,7 +329,7 @@ button{
 .closeModal{
     position: absolute;
     color: white;
-    top: 15px;
+    top: 35px;
     right: 35px;
     font-size: x-large;
     font-weight: bold;
