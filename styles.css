@@ -282,6 +282,10 @@ button{
     text-align: center;
 }
 
+.artImages{
+    cursor: pointer;
+}
+
 .respArt{
     align-content: center;
     text-align: center;
