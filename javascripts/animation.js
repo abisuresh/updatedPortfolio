@@ -95,7 +95,9 @@ function runCarousel(index){
     }, 4000);
 }
 
-/*Lectures on AJAX/asynchronous JS and POST/GET requests were helpful*/
+// POST url: http://flip3.engr.oregonstate.edu:8409/ [uses my port on flip]
+/*Lectures on AJAX/asynchronous JS and POST/GET requests were helpful
+* Creates an object (sentText) with three elements to send*/
 function submitForm(){
     let req = new XMLHttpRequest();
     let sentText = {};
