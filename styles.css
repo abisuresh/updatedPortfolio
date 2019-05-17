@@ -54,6 +54,14 @@ h2{
     display: none;
 }
 
+.view{
+    display: none;
+}
+
+.nowView{
+    display: block;
+}
+
 .introPage{
     /*background-color: midnightblue;*/
 

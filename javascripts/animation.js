@@ -15,6 +15,7 @@ $('.enterWebsite').click(function(){
     $(this).parent("#test").fadeOut(500);
     $(".introPage").removeClass("splash").addClass("postSplash");
     $(".homePage").removeClass("postSplash").addClass("splash");
+    $(".legalClause").removeClass("view").addClass("nowView");
     let index =0;
     runCarousel(index);
 });
