@@ -382,6 +382,10 @@ button{
 
 }
 
+.legalClause{
+    font-size: medium;
+}
+
 /*Add in responsive CSS*/
 
 @media screen and (max-width: 760px){
@@ -405,6 +409,10 @@ button{
 
     .images{
         width: 50%;
+    }
+
+    .legalClause{
+        font-size: small;
     }
 }
 
@@ -437,6 +445,8 @@ button{
         display: block;
         text-align: left;
     }
+
+
 }
 
 @media screen and(min-width: 600px){
