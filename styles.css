@@ -449,6 +449,8 @@ button{
 
 }
 
-@media screen and(min-width: 600px){
-
+@media screen and(min-width: 1900px){
+    body{
+        background-repeat: repeat;
+    }
 }
