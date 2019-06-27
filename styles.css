@@ -81,6 +81,10 @@ h2{
     margin: 0 auto;
 }
 
+#introText{
+    color: black;
+}
+
 .enterWebsite{
     padding: 1%;
     background-color: darkred;
@@ -414,6 +418,10 @@ button{
 
     .legalClause{
         font-size: small;
+    }
+
+    #introText{
+        color: white;
     }
 }
 
