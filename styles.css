@@ -261,7 +261,7 @@ https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_image_gallery*/
 .infoText{
     padding: 3%;
     /*width: 80%;*/
-    height: 200px;
+    height: auto;
 
 }
 
